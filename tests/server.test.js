@@ -4,7 +4,7 @@ const server = require("../src/server");
 describe("Servidor HTTP", () => {
   it("Debe responder Hola Carlos", async () => {
     const response = await request(server).get("/");
-    expect(response.text).toBe("Hola Carlos");
+    expect(response.text).toBe("Bienvenido a la pagina WEB de DOCKER Y KUBERNETES PROFESSIONAL");
   });
 
   it("Debe responder 404 en ruta inválida", async () => {
